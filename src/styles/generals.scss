@@ -14,3 +14,9 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+.col {
+    width: calc(100% / 5 - 20px);
+    margin: 10px;
+    background-color: black;
+}

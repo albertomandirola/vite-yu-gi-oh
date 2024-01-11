@@ -20,6 +20,7 @@ export default {
     getCardData() {
       axios.get(store.endpoint).then((response) => {
         store.CardData = response.data.data
+        console.log(store.CardData)
       })
     }
   },

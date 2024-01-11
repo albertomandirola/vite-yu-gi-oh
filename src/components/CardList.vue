@@ -1,24 +1,26 @@
 <script>
 import CardMaker from './CardMaker.vue'
+
+import { store } from '../store.js';
 export default {
     components: {
         CardMaker
-    }
+    },
+    data() {
+        return {
+            store
+        }
+    },
 }
 </script>
 <template lang="">
-    <div class="col">
-        <img src="" alt="">
-        <h3>mago nero</h3>
-        <h5>Incantatore</h5>
-
+    <div class="col" v-for="(card, index) in store.CardData" :key="index">
+        <img :src="card.card_images[0].image_url_small" alt="">
     </div>
     
 </template>
 <style lang="scss" scoped>
-.col {
-    width: calc(100% / 5 - 20px);
-    margin: 10px;
-    background-color: black;
+img {
+    width: 100%;
 }
 </style>
