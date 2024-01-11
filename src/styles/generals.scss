@@ -8,3 +8,9 @@
     max-width: 991px;
     margin: 0 auto;
 }
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}

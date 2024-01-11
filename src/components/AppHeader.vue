@@ -16,7 +16,6 @@ export default {
 .container {
     @include vertical-center;
 
-
     img {
         width: 150px;
     }
